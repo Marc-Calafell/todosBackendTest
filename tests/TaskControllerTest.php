@@ -13,6 +13,9 @@ class TaskControllerTest extends TestCase
      */
     public function testExample()
     {
-        $this->assertTrue(true);
+        //$this->assertTrue(true);
+        response = $this -> call('GET','/tasques');
+        $this->assertEquals(200,$response->status());
+
     }
 }
